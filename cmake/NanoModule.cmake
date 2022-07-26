@@ -40,6 +40,9 @@ function(nano_add_module NAME)
         endif()
     endif()
 
+    if(${targetName}_POPULATED)
+    message(WARNING DSLJDSKLJDSKJDLKSJDKS)
+    endif()
     FetchContent_Declare(${targetName}
         GIT_REPOSITORY ${GIT_REPOSITORY}
         GIT_TAG ${OPT_TAG}
